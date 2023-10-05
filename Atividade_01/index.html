@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8"> <!--Para corrigir bug nos acentos das palavras-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para certificar que funcione nornalmente em qualquer tela-->
+        <title>Campo Harmônico</title>
+        <link rel="icon" type="imagem/x-icon" href="violão.ico"> <!--Eu tava vendo o W3School e vi que tinha como mudar o icone que aparece na aba, achei legal e fiz também-->
+    </head>
+
+    <body>
+        <header>  <!--Cabeçalho do site-->
+            <h1>Campo Harmônico</h1>
+        </header>
+
+        <main > <!--Corpo do site-->
+
+            <h3>Onde aprender?</h3> <!--Sub título (coloquei isso para ter uma coesão maior no conteúdo da página)-->
+
+            <ul> <!--Lista não ordenada. Prefiro os "pontinhos" aos números-->
+
+                <li>
+                    <a href="https://www.youtube.com/@HARMONIAFACIL" target="_blank"> <!--Para clicar e abrir o site em outra aba-->
+                        Canal do Youtube de Harmônico Facil <br />
+                    </a> <br />
+                </li>
+
+                <li>
+                    <a href="https://musicclan.com.br/blog/campo-harmonico/" target="_blank" > <!--Para clicar e abrir o site em outra aba-->
+                        Site da Music Clan <br />
+                    </a>
+                </li>
+                
+                <li>
+                    <p> Curso na Udemy: <br /> 
+                        <a href="https://www.udemy.com/course/campo-harmonico-descomplicado/" target="_blank"> <!--Para clicar na imagem e abrir o site em outra aba-->
+                            <img 
+                            src="Campo-Harmonico.webp" width="40%"
+                            alt="Foto de um violão" />
+                        </a>
+                    </p>    
+                </li>   
+            </ul>
+            <br>
+
+            <h3>Comparação das opções apresentadas</h3> <!--Sub título (igual ao caso anterior)-->
+            
+
+            <!--Tive que aprender um pouco de CSS antes da hora pra poder botar as bordas na tabela-->
+            <style> 
+                table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse ;
+                }
+            </style> 
+
+            <table>
+                <tr>
+                    <th></th> <!--Não consegui deixar essa célula sem as bordas de uma maneiro bonita, ai desisti :(-->
+                    <th>Qualidade</th>
+                    <th>Custo</th>
+                    <th>Facilidade de Uso</th>
+                </tr>
+
+                <tr>
+                    <td>Harmonia Fácil</td>
+                    <td>Alta</td>
+                    <td>Gratuito</td>
+                    <td>Fácil</td>
+                </tr>
+
+                <tr>
+                    <td>Music Clan</td>
+                    <td>Média</td>
+                    <td>Gratuito</td>
+                    <td>Médio</td>
+                </tr>
+
+                <tr>
+                    <td>Curso na <strong>Udemy</strong></td> <!--"Udemy" em negrito-->
+                    <td>Médio</td>
+                    <td>Pago</td>
+                    <td>Fácil</td>
+                </tr>
+            </table>
+
+        </main>
+        
+    </body>
+</html>
