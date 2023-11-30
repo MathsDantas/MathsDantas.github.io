@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Fjalla+One&family=Inter:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #D9D9D9;
+
+    background-size: cover;
+    background-position: center top;
+    max-height: 100vh;
+
+    
+}
+.corpo {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    top: 80px;
+    width: 100vp;
+    height: 1000px;
+    background-color: #D9D9D9;
+    z-index: 0;
+
+}
+
+
+header{    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho {
+    padding: 5px;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(84, 83, 83));
+    position: absolute;
+    z-index: 1000;
+
+    height: 80px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    
+    z-index: 1;
+
+}
+
+.box{
+    width: 100%;
+    height: 500px;
+    border: 1px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+
+    position:relative;
+    overflow: hidden;
+}
+
+.corpo .box img{
+    
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.5s ease-in-out;
+
+    position: absolute;
+ 
+    object-fit: cover;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+      
+}
+
+.box:hover img{
+    transform: scale(1.1);
+    object-fit: contain;
+    transform: scale 500ms;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    
+}
+
+.logo {
+    height: 80px;
+    padding: 5px;
+}
+
+.botao {
+    text-decoration: none;
+    font-family: Inter;
+    font-size: larger;
+    color:#383838;
+
+    border-radius: 5px;
+
+
+    padding: 32px 16px;
+
+    
+}
+
+.botao :hover {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(222, 222, 222));
+    padding: 32px 8px;
+    border-radius: 5px;
+    color:#383838;
+    transition: color 500ms;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.titulo {
+    font-family: Anonymous Pro;
+    font-size: 10mm;
+    margin-top: 80px;
+    width: 100%;
+    margin-left: 100px;
+    z-index: 1000;
+
+}
+
+.primeira_parte {
+width: 100%;
+
+}
+.primeira_parte > p  {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+
+    margin: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    font-family: Inter;
+    font-size: x-large;
+    color: black;
+    word-wrap: break-word;
+
+}
+
+
+.corpo > p  {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:justify;
+
+    margin: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    font-family: Inter;
+    font-size: large;
+    color: black;
+    word-wrap: break-word;
+
+}
+
+.primeira_parte > img {
+    width: 100%;
+}
+
+.segunda_parte {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+
+.segunda_parte > p {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:justify;
+
+    margin-right: 50px;
+
+
+    font-family: Inter;
+    font-size: x-large;
+    color: black;
+    word-wrap: break-word;
+    
+}
+
+.terceira_parte {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+
+}
+
+.terceira_parte > img {
+    width: 50%;
+}
+
+.terceira_parte > p {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size:x-large;
+
+    margin-left: 50px;
+
+
+    font-family: Inter;
+    color: black;
+    word-wrap: break-word;
+}
+
+.rodape{
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    display:flex;
+}
+
+.creditos{
+    color: white;
+    padding: 10px;
+
+}
+
+/* Slider*/
+
+
+
+
+.image-slider {
+            width: 572px;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-slider .slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: rgb(255, 255, 255);
+            position: absolute;
+            transform: translate(572px, 0);
+        }
+
+        .image-slider .slide.active{
+            transform: translate(0, 0);
+        }
+
+        .image-slider .slide.meio-esquerda{
+            animation: meio_esquerda 500ms linear;
+            transform: translate(-500px, 0);
+        }
+
+        @keyframes meio_esquerda {
+            from{
+                transform: translate(0,0);
+            }to{
+                transform: translate(-572px, 0);
+            }
+        }
+
+        .image-slider .slide.direita-meio{
+            animation: direita_meio 500ms linear;
+            transform: translate(0px, 0);
+        }
+
+
+        @keyframes direita_meio {
+            from{
+                transform: translate(572px, 0);
+            }to{
+                transform: translate(0px, 0px);
+            }
+        }
+        
+        .image-slider .slide.meio-direita{
+            animation: meio_direita 500ms linear;
+            transform: translate(572px, 0);
+        }
+
+        @keyframes meio_direita {
+            from{
+                transform: translate(0,0);
+            }to{
+                transform: translate(572px, 0);
+            }
+        }
+
+        .image-slider .slide.esquerda-meio{
+            animation: esquerda-meio 500ms linear;
+            transform: translate(0, 0);
+        }
+
+        @keyframes esquerda-meio {
+            from{
+                transform: translate(-572px,0);
+            }to{
+                transform: translate(0px, 0);
+            }
+        }
+
+
+        .image-slider .seta-esquerda {
+            position: absolute;
+            left:0;
+            top: calc(50% - 28px);
+            color:rgb(145, 140, 140);
+            font-size: 40px;
+            padding: 10px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .image-slider .seta-direita {
+            position: absolute;
+            right: 0;
+            padding: 10px;
+            top: calc(50% - 28px);
+            color: rgb(145, 140, 140);
+            font-size: 40px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .image-slider .indicators {
+            display: flex;
+            justify-content: space-around;
+            width: 160px;
+            padding: 15px;
+        }
+
+        .image-slider .indicators .indicator{
+            background-color: rgb(183, 173, 173);
+            width: 40px;
+            height: 5px;
+        }
+
+        .image-slider .indicators .indicator.active{
+            background-color: rgb(145, 140, 140);
+        }
+
+        .image-slider .indicators {
+            position: absolute;
+            bottom: 0;
+            left: calc(50% - 95px);
+        }
+
+        @media only screen and (max-width: 900px) {
+            header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+            }
+        
+            .cabecalho {
+                position: relative;
+            }
+        
+            .nav {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .botao {
+                color: black;
+                padding: 0;
+            }
+        
+            .botao :hover {
+                padding: 0;
+            }
+
+            .primeira_parte {
+                flex-direction: column;
+                width: auto;
+            }
+        
+            .primeira_parte > img {
+                width: 100%;
+        
+            }
+        
+            .segunda_parte {
+                flex-direction: column;
+            }
+        
+            .segunda_parte > img {
+                width: 50%;
+            }
+        
+            .terceira_parte {
+                flex-direction: column;
+            }
+        
+            .final {
+                flex-direction: column;
+            }
+        }
