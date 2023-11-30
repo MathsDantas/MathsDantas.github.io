@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Fjalla+One&family=Inter:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #D9D9D9;
+    background-size: cover;
+    background-position: center top;
+    max-height: 100vh;
+}
+
+.corpo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho {
+    padding: 5px;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(84, 83, 83));
+    position: absolute;
+    z-index: 1000;
+}
+
+.logo {
+    height: 80px;
+    padding: 5px;
+}
+
+.botao {
+    text-decoration: none;
+    font-family: Inter;
+    font-size: larger;
+    color: #383838;
+    border-radius: 5px;
+    padding: 32px 16px;
+}
+
+.botao :hover {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(222, 222, 222));
+    padding: 32px 8px;
+    border-radius: 5px;
+    color: #383838;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.parte-1 {
+    padding-top: 110px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.247);
+    flex-direction: row;
+    justify-content: center;
+}
+
+.parte-1 h1 {
+    font-size: 50px;
+}
+
+.parte-1>img {
+    width: 45%;
+}
+
+.titulo-1 {
+    padding: 40px;
+    margin-top: 20px;
+    z-index: 1000;
+    color: rgb(255, 255, 255);
+    transition: transform 0.1s ease;
+}
+
+.titulo-1>h1 {
+    padding: 10px;
+    font-family: Anonymous Pro;
+    font-size: 20mm;
+    margin-top: 20px;
+    z-index: 1000;
+    color: rgb(255, 255, 255);
+    transition: transform 0.1s ease;
+}
+
+.titulo-1:hover {
+    transform: translate(5px, -5px);
+}
+
+
+.titulo-1>.editor {
+    font-size: 4mm;
+    padding: 10px;
+    width: 100%;
+    font-family: Inter;
+}
+
+.subtitulo-1 {
+    padding: 5px;
+    font-size: 25px;
+    color: #383838;
+    font-family: Anonymous Pro;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.parte-2 {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    width: calc(100% - 500px);
+}
+
+.parte-2>h1 {
+    font-size: 20px;
+    display: flex;
+    align-items: left;
+    text-align: left;
+    margin-right: 50px;
+    font-family: Inter;
+    color: rgb(0, 0, 0);
+    word-wrap: break-word;
+    transition: transform 0.1s ease;
+    text-align: justify;
+}
+
+.parte-2>h1:hover {
+    transform: translate(5px, -5px);
+}
+
+.parte-3 {
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+
+}
+
+.parte-3>h1 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    font-family: Inter;
+    color: rgb(0, 0, 0);
+    word-wrap: break-word;
+    width: 80%;
+    transition: transform 0.1s ease;
+    text-align: justify;
+    margin-right: 300px;
+}
+
+.parte-3>h1:hover {
+    transform: translate(5px, -5px);
+}
+
+.parte-3>img {
+    padding: 15px;
+    width: 30%;
+
+}
+
+.parte-4 {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    margin-left: 250px;
+}
+
+.parte-4>h1 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    font-family: Inter;
+    color: rgb(0, 0, 0);
+    word-wrap: break-word;
+    width: 80%;
+    transition: transform 0.1s ease;
+    text-align: justify;
+}
+
+.parte-4>h1:hover {
+    transform: translate(5px, -5px);
+}
+
+.parte-5 {
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+.parte-5>img {
+    width: 50%;
+}
+
+.titulo-5 {
+    padding: 50px;
+    font-family: Anonymous Pro;
+    font-size: 8mm;
+    margin-top: 20px;
+    z-index: 1000;
+    color: rgb(255, 255, 255);
+    margin-left: 200px;
+    transition: transform 0.1s ease;
+}
+
+.titulo-5:hover {
+    transform: translate(5px, -5px);
+}
+
+.subtitulo-5 {
+    padding-top: 15px;
+    font-size: 6mm;
+    color: #383838;
+    font-family: Anonymous Pro;
+    width: 100%;
+    font-style: italic;
+}
+
+.parte-6 {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    margin-left: 250px;
+}
+
+.parte-6>h1 {
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    font-family: Inter;
+    color: rgb(0, 0, 0);
+    word-wrap: break-word;
+    width: 80%;
+    transition: transform 0.1s ease;
+    text-align: justify;
+}
+
+.parte-6>h1:hover {
+    transform: translate(5px, -5px);
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+    }
+
+    .cabecalho {
+        position: relative;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao {
+        color: black;
+        padding: 0;
+    }
+
+    .botao :hover {
+        padding: 0;
+    }
+
+}
+
+.rodape {
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    display: flex;
+}
+
+.creditos {
+    color: white;
+    padding: 10px;
+
+}
